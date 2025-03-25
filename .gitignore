@@ -1,6 +1,7 @@
 # Data folder. If needed, add files with git add -f <file>
 # only at the project root (leading /)
 /data
+*.lp
 *.npz
 *.npy
 *.pkl
@@ -53,6 +54,11 @@ share/python-wheels/
 *.egg
 MANIFEST
 *.idea
+
+examples/models
+examples/instances
+examples/data
+examples/*.ipynb
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

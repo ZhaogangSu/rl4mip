@@ -157,11 +157,56 @@ class MIPBranchingEnv:
             print(f"Error during optimization: {e}")
             solve_time = 0
         
-        # Return results
+# Collect optimization results
+        status = self.scip.getStatus()
+        nodes = self.scip.getNNodes()
+        lp_iterations = self.scip.getNLPIterations()
+        
+        # Objective values and gap
+        primal_bound = self.scip.getPrimalbound() if self.scip.getStatus() != "infeasible" else float('inf')
+        dual_bound = self.scip.getDualbound()
+        gap = self.scip.getGap() if status in ["optimal", "bestsollimit", "nodelimit", "totalnodelimit", "stallnodelimit", "timelimit"] else float('inf')
+        
+        # Cuts information
+        n_cuts_applied = self.scip.getNCutsApplied()
+        
+        # Get primal-dual integral
+        # Use the standalone readStatistics function
+        import tempfile
+        import os
+        from pyscipopt import readStatistics
+        
+        stats_file = tempfile.NamedTemporaryFile(delete=False, suffix='.stats')
+        stats_filename = stats_file.name
+        stats_file.close()
+        
+        self.scip.writeStatistics(stats_filename)
+        
+        # Read the statistics file to get the primal-dual integral
+        try:
+            stats = readStatistics(stats_filename)
+            primal_dual_integral = stats.primal_dual_integral if stats.primal_dual_integral is not None else float('inf')
+        except Exception as e:
+            print(f"Warning: Could not read primal-dual integral: {e}")
+            primal_dual_integral = None
+        
+        # Clean up the temporary file
+        try:
+            os.unlink(stats_filename)
+        except:
+            pass
+        
+        # Return enhanced results
         return {
-            "status": self.scip.getStatus(),
-            "nodes": self.scip.getNNodes(),
+            "status": status,
+            "nodes": nodes,
             "time": solve_time,
+            "lp_iterations": lp_iterations,
+            "primal_bound": primal_bound,
+            "dual_bound": dual_bound,
+            "gap": gap,
+            "primal_dual_integral": primal_dual_integral,
+            "cuts_applied": n_cuts_applied,
             "states": self.branch_rule.states,
             "actions": self.branch_rule.actions,
             "branching_calls": self.branch_rule.branching_calls,
