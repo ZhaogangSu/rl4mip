@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files
+*.lp
+*.pt
+*.pkl
+*.pickle
+*.csv
+*.db
+*.npy
+*.bg
+*.sol
+
+# Model checkpoints
+*.ckpt
+*.pth
+models/
+myModels/
+
+# Build artifacts
+*.o
+
+# Logs and outputs
+*.out
+*.txt
+*.log
+*.tb
+events.out.tfevents.*
+
+# Test results
+test_*/
+results/
+
+# Collected data
+data/
+myData/
+collect_res/
+
+# Generated outputs
+dataGen_logger/
+branch_output.txt
+node_output.txt
+myout.out
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+*.yml
+!environment_rl4mip.yml
