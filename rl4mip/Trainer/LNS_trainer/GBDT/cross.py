@@ -1,5 +1,5 @@
 import numpy as np
-from ml4co.Trainer.LNS_trainer.GBDT.gurobi_solver import Gurobi_solver
+from rl4mip.Trainer.LNS_trainer.GBDT.gurobi_solver import Gurobi_solver
 
 def cross(n, m, k, site, value, constraint, constraint_type, coefficient, obj_type, rate, solA, blockA, solB, blockB, set_time, lower_bound, upper_bound, value_type):
     crossX = np.zeros(n)

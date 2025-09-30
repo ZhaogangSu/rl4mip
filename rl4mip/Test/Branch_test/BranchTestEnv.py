@@ -11,7 +11,7 @@ from torch_scatter import scatter_max as scatter_max_raw, scatter_min as scatter
 import pandas as pd
 import importlib
 
-from ml4co.Trainer.Branch_model.GNN import GNNPolicy
+from rl4mip.Trainer.Branch_model.GNN import GNNPolicy
 from .test_utils import init_scip_params, log, get_test_instances, get_results_statistic, _preprocess
 from torch.multiprocessing import Process, set_start_method, Queue, Value
 from functools import partial
@@ -89,8 +89,8 @@ class PolicyBranching(scip.Branchrule):
         
         elif self.policy == 'hybrid':
             log(f"model name is {model_name}")
-            sys.path.insert(0, os.path.abspath(f'ml4co/Trainer/Branch_model/hybrid_model/{model_name}'))
-            from ml4co.Trainer.Branch_model.hybrid_model.film import model
+            sys.path.insert(0, os.path.abspath(f'rl4mip/Trainer/Branch_model/hybrid_model/{model_name}'))
+            from rl4mip.Trainer.Branch_model.hybrid_model.film import model
             # import model
             importlib.reload(model)
             policy_model = model.Policy().to(self.device)
@@ -102,7 +102,7 @@ class PolicyBranching(scip.Branchrule):
 
             self.teacher = None
             if "-pre" in model_name:
-                sys.path.insert(0, os.path.abspath(f'ml4co/Trainer/Branch_model/hybrid_model/{teacher_model}'))
+                sys.path.insert(0, os.path.abspath(f'rl4mip/Trainer/Branch_model/hybrid_model/{teacher_model}'))
                 import model
                 importlib.reload(model)
                 self.teacher = model.GCNPolicy().to(self.device)

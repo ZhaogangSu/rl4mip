@@ -5,7 +5,7 @@ import shutil
 import pyscipopt as scip
 import time
 import shutil
-from ml4co.DataCollector.LNS_data.RL_data import utilities
+from rl4mip.DataCollector.LNS_data.RL_data import utilities
 import sys
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))

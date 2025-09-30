@@ -3,7 +3,7 @@ import torch.nn.functional as F
 import torch
 
 SAFE_EPSILON = 1e-6
-from ml4co.Trainer.Branch_model.symb_model.transformer_utils import TransformerDSOEncoder
+from rl4mip.Trainer.Branch_model.symb_model.transformer_utils import TransformerDSOEncoder
                 
 
 

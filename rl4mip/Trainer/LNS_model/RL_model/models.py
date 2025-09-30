@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from ml4co.Trainer.LNS_model.RL_model import model_utils
-from ml4co.Trainer.LNS_trainer.RL.DataLoader import GNNDataLoader, GNNDataLoaderA
+from rl4mip.Trainer.LNS_model.RL_model import model_utils
+from rl4mip.Trainer.LNS_trainer.RL.DataLoader import GNNDataLoader, GNNDataLoaderA
 
 class Model(nn.Module):
     def __init__(self, name, network='gnn_actor', **network_kwargs):

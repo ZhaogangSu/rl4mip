@@ -12,9 +12,9 @@ import torch.nn.functional as F
 import torch_geometric
 from pytorch_metric_learning import losses
 
-from ml4co.Trainer.LNS_model.GBDT_model.gbdt_regressor import GradientBoostingRegressor
-from ml4co.Trainer.LNS_model.GBDT_model.graphcnn import GNNPolicy
-from ml4co.Trainer.LNS_model.GBDT_model.graph import BipartiteNodeData, GraphDataset
+from rl4mip.Trainer.LNS_model.GBDT_model.gbdt_regressor import GradientBoostingRegressor
+from rl4mip.Trainer.LNS_model.GBDT_model.graphcnn import GNNPolicy
+from rl4mip.Trainer.LNS_model.GBDT_model.graph import BipartiteNodeData, GraphDataset
 
 # class BipartiteNodeData(torch_geometric.data.Data):
 #     """

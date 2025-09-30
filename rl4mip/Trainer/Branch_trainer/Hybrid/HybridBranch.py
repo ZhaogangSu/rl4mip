@@ -199,7 +199,7 @@ class HybridBranchTrainer:
             model_file = f"{model_file}_l2_{self.l2}"
 
         ### model loading ###
-        sys.path.insert(0, os.path.abspath(f'ml4co/Trainer/Branch_model/hybrid_model/{model_name}'))
+        sys.path.insert(0, os.path.abspath(f'rl4mip/Trainer/Branch_model/hybrid_model/{model_name}'))
         import model
         importlib.reload(model)
         distilled_model = model.Policy()
@@ -209,7 +209,7 @@ class HybridBranchTrainer:
         ### teacher model loading ###
         teacher = None
         if (self.distilled or self.no_e2e):
-            sys.path.insert(0, os.path.abspath(f'ml4co/Trainer/Branch_model/hybrid_model/{teacher_model}'))
+            sys.path.insert(0, os.path.abspath(f'rl4mip/Trainer/Branch_model/hybrid_model/{teacher_model}'))
             import model
             importlib.reload(model)
             teacher = model.GCNPolicy()

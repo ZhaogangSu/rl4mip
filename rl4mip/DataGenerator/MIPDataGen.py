@@ -15,30 +15,30 @@ from omegaconf import DictConfig, OmegaConf
 import torch
 from datetime import datetime
 
-from ml4co.DataGenerator.L2O.src import instance2graph as L2O_instance2graph
-from ml4co.DataGenerator.L2O.src import set_cpu_num as L2O_set_cpu_num
-from ml4co.DataGenerator.L2O.src import set_seed as L2O_set_seed
-from ml4co.DataGenerator.L2O.src import solve_instance as L2O_solve_instance
+from rl4mip.DataGenerator.L2O.src import instance2graph as L2O_instance2graph
+from rl4mip.DataGenerator.L2O.src import set_cpu_num as L2O_set_cpu_num
+from rl4mip.DataGenerator.L2O.src import set_seed as L2O_set_seed
+from rl4mip.DataGenerator.L2O.src import solve_instance as L2O_solve_instance
 
-import ml4co.DataGenerator.L2O.src.tb_writter as L2O_tb_writter
-from ml4co.DataGenerator.L2O.src import G2MILP
-from ml4co.DataGenerator.L2O.src import Benchmark as L2O_Benchmark
-from ml4co.DataGenerator.L2O.src import Generator as L2O_Generator
-from ml4co.DataGenerator.L2O.src import InstanceDataset as L2O_InstanceDataset
-from ml4co.DataGenerator.L2O.src import Trainer as L2O_Trainer
+import rl4mip.DataGenerator.L2O.src.tb_writter as L2O_tb_writter
+from rl4mip.DataGenerator.L2O.src import G2MILP
+from rl4mip.DataGenerator.L2O.src import Benchmark as L2O_Benchmark
+from rl4mip.DataGenerator.L2O.src import Generator as L2O_Generator
+from rl4mip.DataGenerator.L2O.src import InstanceDataset as L2O_InstanceDataset
+from rl4mip.DataGenerator.L2O.src import Trainer as L2O_Trainer
 
 
-from ml4co.DataGenerator.ACM.src import instance2graph as ACM_instance2graph
-from ml4co.DataGenerator.ACM.src import set_cpu_num as ACM_set_cpu_num
-from ml4co.DataGenerator.ACM.src import set_seed as ACM_set_seed
-from ml4co.DataGenerator.ACM.src import solve_instance as ACM_solve_instance
+from rl4mip.DataGenerator.ACM.src import instance2graph as ACM_instance2graph
+from rl4mip.DataGenerator.ACM.src import set_cpu_num as ACM_set_cpu_num
+from rl4mip.DataGenerator.ACM.src import set_seed as ACM_set_seed
+from rl4mip.DataGenerator.ACM.src import solve_instance as ACM_solve_instance
 
-import ml4co.DataGenerator.ACM.src.tb_writter as ACM_tb_writter
-from ml4co.DataGenerator.ACM.src import ACMMILP
-from ml4co.DataGenerator.ACM.src import Benchmark as ACM_Benchmark
-from ml4co.DataGenerator.ACM.src import Generator as ACM_Generator
-from ml4co.DataGenerator.ACM.src import InstanceDataset as ACM_InstanceDataset
-from ml4co.DataGenerator.ACM.src import Trainer as ACM_Trainer
+import rl4mip.DataGenerator.ACM.src.tb_writter as ACM_tb_writter
+from rl4mip.DataGenerator.ACM.src import ACMMILP
+from rl4mip.DataGenerator.ACM.src import Benchmark as ACM_Benchmark
+from rl4mip.DataGenerator.ACM.src import Generator as ACM_Generator
+from rl4mip.DataGenerator.ACM.src import InstanceDataset as ACM_InstanceDataset
+from rl4mip.DataGenerator.ACM.src import Trainer as ACM_Trainer
 
 
 def format_logger():

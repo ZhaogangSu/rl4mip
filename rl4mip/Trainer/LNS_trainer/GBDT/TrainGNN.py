@@ -8,8 +8,8 @@ import torch.nn.functional as F
 import torch_geometric
 from pytorch_metric_learning import losses
 
-from ml4co.Trainer.LNS_model.GBDT_model.graphcnn import GNNPolicy
-from ml4co.Trainer.LNS_model.GBDT_model.graph import GraphDataset
+from rl4mip.Trainer.LNS_model.GBDT_model.graphcnn import GNNPolicy
+from rl4mip.Trainer.LNS_model.GBDT_model.graph import GraphDataset
 
 __all__ = ["train"]
 

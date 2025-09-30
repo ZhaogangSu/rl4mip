@@ -9,8 +9,8 @@ import git
 import gzip
 import pickle
 
-import ml4co.Trainer.Nodeselect_model.DSO.utils.logger as logger
-import ml4co.Trainer.Nodeselect_model.DSO.settings.consts as consts
+import rl4mip.Trainer.Nodeselect_model.DSO.utils.logger as logger
+import rl4mip.Trainer.Nodeselect_model.DSO.settings.consts as consts
 
 import json
 from termcolor import colored

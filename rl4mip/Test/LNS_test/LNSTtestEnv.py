@@ -20,18 +20,18 @@ import matplotlib.pyplot as plt
 import cloudpickle as pickle
 from functools import cmp_to_key
 
-from ml4co.Trainer.LNS_model.CL_model.gnn_policy import GNNPolicy
-from ml4co.DataCollector.LNS_data.CL_data.utils import logger, init_scip_params, make_obs
-from ml4co.DataCollector.LNS_data.CL_data.utils import scip_solve, create_neighborhood_with_ML, create_sub_mip
-from ml4co.DataCollector.LNS_data.IL_data.utils import get_feat
-from ml4co.Trainer.LNS_model.IL_model.gcn_pre import BipartiteNodeData, GNNPolicy_pre
+from rl4mip.Trainer.LNS_model.CL_model.gnn_policy import GNNPolicy
+from rl4mip.DataCollector.LNS_data.CL_data.utils import logger, init_scip_params, make_obs
+from rl4mip.DataCollector.LNS_data.CL_data.utils import scip_solve, create_neighborhood_with_ML, create_sub_mip
+from rl4mip.DataCollector.LNS_data.IL_data.utils import get_feat
+from rl4mip.Trainer.LNS_model.IL_model.gcn_pre import BipartiteNodeData, GNNPolicy_pre
 
-from ml4co.Trainer.LNS_model.GBDT_model.graphcnn import GNNPolicy as GBDT_Policy
-from ml4co.Trainer.LNS_model.GBDT_model.gbdt_regressor import GradientBoostingRegressor
-from ml4co.Trainer.LNS_trainer.GBDT.generate_blocks import cmp, pair, random_generate_blocks, cross_generate_blocks
-from ml4co.Trainer.LNS_trainer.GBDT.cross import cross
-from ml4co.Trainer.LNS_trainer.GBDT.gurobi_solver import Gurobi_solver
-from ml4co.Test.LNS_test.GNNTest import GNNPolicyTester
+from rl4mip.Trainer.LNS_model.GBDT_model.graphcnn import GNNPolicy as GBDT_Policy
+from rl4mip.Trainer.LNS_model.GBDT_model.gbdt_regressor import GradientBoostingRegressor
+from rl4mip.Trainer.LNS_trainer.GBDT.generate_blocks import cmp, pair, random_generate_blocks, cross_generate_blocks
+from rl4mip.Trainer.LNS_trainer.GBDT.cross import cross
+from rl4mip.Trainer.LNS_trainer.GBDT.gurobi_solver import Gurobi_solver
+from rl4mip.Test.LNS_test.GNNTest import GNNPolicyTester
 
 def optimize(pair_path: str,
              pickle_path: str,

@@ -2,18 +2,18 @@ import os
 import sys
 import numpy as np
 
-from ml4co.Trainer.Nodeselect_trainer.ML.ml_node_train import ML_Nodeselect_Trainer
-from ml4co.Trainer.Nodeselect_trainer.DSO.dso_node_train import TrainDSOAgent
+from rl4mip.Trainer.Nodeselect_trainer.ML.ml_node_train import ML_Nodeselect_Trainer
+from rl4mip.Trainer.Nodeselect_trainer.DSO.dso_node_train import TrainDSOAgent
 
-from ml4co.Trainer.Branch_trainer.GNN.GNNBranch import GNNBranchTrainer
-from ml4co.Trainer.Branch_trainer.Hybrid.HybridBranch import HybridBranchTrainer
-from ml4co.Trainer.Branch_trainer.Symb.SymbBranch import SymbBranchTrainer
+from rl4mip.Trainer.Branch_trainer.GNN.GNNBranch import GNNBranchTrainer
+from rl4mip.Trainer.Branch_trainer.Hybrid.HybridBranch import HybridBranchTrainer
+from rl4mip.Trainer.Branch_trainer.Symb.SymbBranch import SymbBranchTrainer
 
-from ml4co.Trainer.LNS_trainer.CL.CL_LNS import CLTrainer
-from ml4co.Trainer.LNS_trainer.IL.IL_LNS import ILTrainer, ILTrainer_Pre
-from ml4co.Trainer.LNS_trainer.RL.GNNTrain import GNNPolicyTrainer
-from ml4co.Trainer.LNS_trainer.GBDT.TrainGNN import trainGNN
-from ml4co.Trainer.LNS_trainer.GBDT.TrainGBDT import trainGBDT
+from rl4mip.Trainer.LNS_trainer.CL.CL_LNS import CLTrainer
+from rl4mip.Trainer.LNS_trainer.IL.IL_LNS import ILTrainer, ILTrainer_Pre
+from rl4mip.Trainer.LNS_trainer.RL.GNNTrain import GNNPolicyTrainer
+from rl4mip.Trainer.LNS_trainer.GBDT.TrainGNN import trainGNN
+from rl4mip.Trainer.LNS_trainer.GBDT.TrainGBDT import trainGBDT
 
 import torch
 

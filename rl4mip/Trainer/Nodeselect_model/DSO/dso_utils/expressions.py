@@ -8,8 +8,8 @@ import torch.nn.functional as F
 
 from contextlib import contextmanager
 
-import ml4co.Trainer.Nodeselect_model.DSO.dso_utils.operators as operators_module
-import ml4co.Trainer.Nodeselect_model.DSO.settings.consts as consts
+import rl4mip.Trainer.Nodeselect_model.DSO.dso_utils.operators as operators_module
+import rl4mip.Trainer.Nodeselect_model.DSO.settings.consts as consts
 
 @contextmanager
 def set_train_mode(network, train_mode=True):

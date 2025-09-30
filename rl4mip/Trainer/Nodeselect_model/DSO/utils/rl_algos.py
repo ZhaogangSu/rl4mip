@@ -1,8 +1,8 @@
 from math import ceil
 import torch
 from torch.optim import Adam
-import ml4co.Trainer.Nodeselect_model.DSO.utils.logger as logger
-import ml4co.Trainer.Nodeselect_model.DSO.settings.consts as consts
+import rl4mip.Trainer.Nodeselect_model.DSO.utils.logger as logger
+import rl4mip.Trainer.Nodeselect_model.DSO.settings.consts as consts
 import numpy as np
 
 def normalize_meanstd(returns):

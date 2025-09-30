@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 
 from .DataLoader import GNNdataLoader
-from ml4co.Trainer.Branch_model.GNN import GNNPolicy
+from rl4mip.Trainer.Branch_model.GNN import GNNPolicy
 
 
 def pad_tensor(input_, pad_sizes, pad_value=-1e8):

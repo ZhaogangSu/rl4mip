@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
-from ml4co.Trainer.LNS_trainer.RL import env_utils
+from rl4mip.Trainer.LNS_trainer.RL import env_utils
 import copy
 import torch
 import numpy as np

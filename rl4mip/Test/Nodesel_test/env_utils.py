@@ -20,7 +20,7 @@ import time
 import torch_geometric
 
 from pyscipopt import Nodesel
-from ml4co.Trainer.Nodeselect_model.ML.model import GNNPolicy, RankNet
+from rl4mip.Trainer.Nodeselect_model.ML.model import GNNPolicy, RankNet
 
 from line_profiler import LineProfiler
 from joblib import dump, load

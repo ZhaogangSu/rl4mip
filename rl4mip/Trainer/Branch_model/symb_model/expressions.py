@@ -8,7 +8,7 @@ import torch.nn.functional as F
 
 from contextlib import contextmanager
 
-import ml4co.Trainer.Branch_model.symb_model.operators as operators_module
+import rl4mip.Trainer.Branch_model.symb_model.operators as operators_module
 
 @contextmanager
 def set_train_mode(network, train_mode=True):

@@ -15,7 +15,7 @@ from torch.multiprocessing import Pool
 from torch_geometric.data import Data
 from torch import as_tensor
 
-import ml4co.Trainer.Nodeselect_model.DSO.utils.utils as utils
+import rl4mip.Trainer.Nodeselect_model.DSO.utils.utils as utils
 
 
 

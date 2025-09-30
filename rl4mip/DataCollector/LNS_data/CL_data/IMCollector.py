@@ -1,6 +1,6 @@
 import os
 import sys
-from ml4co.DataCollector.LNS_data.CL_data.Collector_utils import collect_samples
+from rl4mip.DataCollector.LNS_data.CL_data.Collector_utils import collect_samples
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 

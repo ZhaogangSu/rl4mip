@@ -9,11 +9,11 @@ from pytorch_metric_learning.distances import DotProductSimilarity
 from pytorch_metric_learning import losses
 from torchmetrics.functional import auroc
 from tensorboardX import SummaryWriter as SummaryWriter
-from ml4co.Trainer.LNS_model.CL_model.gnn_policy import GNNPolicy
-from ml4co.Trainer.LNS_model.CL_model.losses import LogScoreLoss, LinearScoreLoss
-from ml4co.DataCollector.LNS_data.CL_data.utils import augment_variable_features_with_dynamic_ones
-from ml4co.DataCollector.LNS_data.CL_data.utils import pad_tensor, multi_hot_encoding
-from ml4co.DataCollector.LNS_data.CL_data import bipartite_graph_loader as bgl
+from rl4mip.Trainer.LNS_model.CL_model.gnn_policy import GNNPolicy
+from rl4mip.Trainer.LNS_model.CL_model.losses import LogScoreLoss, LinearScoreLoss
+from rl4mip.DataCollector.LNS_data.CL_data.utils import augment_variable_features_with_dynamic_ones
+from rl4mip.DataCollector.LNS_data.CL_data.utils import pad_tensor, multi_hot_encoding
+from rl4mip.DataCollector.LNS_data.CL_data import bipartite_graph_loader as bgl
 
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))

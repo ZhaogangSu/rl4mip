@@ -93,9 +93,9 @@ class BipartiteGraphDataset(torch_geometric.data.Dataset):
         import sys
         from types import ModuleType
         # 1. 确保模块路径在sys.path中
-        ml4co_path = "/data/home/zdhs0047/benchmark/lns_add/ml4co"
-        if ml4co_path not in sys.path:
-            sys.path.insert(0, ml4co_path)
+        rl4mip_path = "/data/home/zdhs0047/benchmark/lns_add/rl4mip"
+        if rl4mip_path not in sys.path:
+            sys.path.insert(0, rl4mip_path)
         
         # 2. 动态创建所有可能缺失的模块
         required_modules = [

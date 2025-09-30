@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 
-from ml4co.Trainer.Nodeselect_model.DSO.settings.consts import SAFE_EPSILON
+from rl4mip.Trainer.Nodeselect_model.DSO.settings.consts import SAFE_EPSILON
 
 class DSOAgent(nn.Module):
     def __init__(self, operators, min_length=4, max_length=64, hidden_size=128, num_layers=2, soft_length=20, two_sigma_square=16):

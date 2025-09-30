@@ -3,7 +3,7 @@ import glob
 import numpy as np
 import argparse
 import sys
-from ml4co.DataCollector.lns_data.IL_data.Collector_utils import collect_samples
+from rl4mip.DataCollector.lns_data.IL_data.Collector_utils import collect_samples
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 

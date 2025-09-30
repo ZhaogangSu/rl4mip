@@ -1,6 +1,6 @@
-# from ml4co.Test.Nodesel_test.node_test_env import NodeselPolicyTestEnv
-# from ml4co.Test.Branch_test.BranchTestEnv import BranchPolicyTestEnv
-# from ml4co.Test.LNS_test.LNSTtestEnv import LNSPolicyTestEnv, NDPolicyTestEnv, optimize
+# from rl4mip.Test.Nodesel_test.node_test_env import NodeselPolicyTestEnv
+# from rl4mip.Test.Branch_test.BranchTestEnv import BranchPolicyTestEnv
+# from rl4mip.Test.LNS_test.LNSTtestEnv import LNSPolicyTestEnv, NDPolicyTestEnv, optimize
 # import os
 
 # class MIPTest:
@@ -72,9 +72,9 @@
 #         else:
 #             raise NotImplementedError
 
-from ml4co.Test.Nodesel_test.node_test_env import NodeselPolicyTestEnv
-from ml4co.Test.Branch_test.BranchTestEnv import BranchPolicyTestEnv
-from ml4co.Test.LNS_test.LNSTtestEnv import LNSPolicyTestEnv, NDPolicyTestEnv, optimize
+from rl4mip.Test.Nodesel_test.node_test_env import NodeselPolicyTestEnv
+from rl4mip.Test.Branch_test.BranchTestEnv import BranchPolicyTestEnv
+from rl4mip.Test.LNS_test.LNSTtestEnv import LNSPolicyTestEnv, NDPolicyTestEnv, optimize
 import os
 
 class MIPTest:

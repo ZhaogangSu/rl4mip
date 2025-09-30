@@ -8,7 +8,7 @@ from collections import defaultdict
 
 from contextlib import contextmanager
 
-import ml4co.Trainer.Branch_model.symb_model.operators_graph as operators_module
+import rl4mip.Trainer.Branch_model.symb_model.operators_graph as operators_module
 
 def scatter_min(src, index):
     return scatter_min_raw(src, index)[0]

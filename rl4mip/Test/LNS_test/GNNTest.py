@@ -5,12 +5,12 @@ import random
 import copy
 import torch
 import time
-from ml4co.DataCollector.LNS_data.CL_data.utils import logger
-from ml4co.DataCollector.LNS_data.RL_data.DataMemory import Memory
-from ml4co.DataCollector.LNS_data.RL_data.SFdata_Collector import collect_samples, collect_samples0
-from ml4co.Trainer.LNS_trainer.RL.TrainEnv import DDPG
-from ml4co.Trainer.LNS_model.RL_model.models import Actor_mean, Critic_mean
-from ml4co.Trainer.LNS_model.RL_model.noise import AdaptiveParamNoiseSpec, NormalActionNoise, OrnsteinUhlenbeckActionNoise
+from rl4mip.DataCollector.LNS_data.CL_data.utils import logger
+from rl4mip.DataCollector.LNS_data.RL_data.DataMemory import Memory
+from rl4mip.DataCollector.LNS_data.RL_data.SFdata_Collector import collect_samples, collect_samples0
+from rl4mip.Trainer.LNS_trainer.RL.TrainEnv import DDPG
+from rl4mip.Trainer.LNS_model.RL_model.models import Actor_mean, Critic_mean
+from rl4mip.Trainer.LNS_model.RL_model.noise import AdaptiveParamNoiseSpec, NormalActionNoise, OrnsteinUhlenbeckActionNoise
 
 
 def log(str, logfile=None):

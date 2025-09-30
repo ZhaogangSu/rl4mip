@@ -5,8 +5,8 @@ File adapted from https://github.com/dandip/DSRPytorch
 import torch
 from collections import OrderedDict, defaultdict
 
-import ml4co.Trainer.Nodeselect_model.DSO.settings.consts as consts
-import ml4co.Trainer.Nodeselect_model.DSO.utils.logger as logger
+import rl4mip.Trainer.Nodeselect_model.DSO.settings.consts as consts
+import rl4mip.Trainer.Nodeselect_model.DSO.utils.logger as logger
 
 MATH_ARITY = OrderedDict([ # arity 2 -> arity 1
     ('+',2),

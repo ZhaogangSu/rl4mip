@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import pyscipopt as scip
 import sys
-from ml4co.DataCollector.lns_data.IL_data.utils import get_feat
+from rl4mip.DataCollector.lns_data.IL_data.utils import get_feat
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 def collect_feasols(filepath, settings):

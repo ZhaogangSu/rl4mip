@@ -8,7 +8,7 @@
 import numpy as np
 from numpy import ndarray
 
-from ml4co.Trainer.LNS_model.GBDT_model.gbdt_base import GradientBoostingBase
+from rl4mip.Trainer.LNS_model.GBDT_model.gbdt_base import GradientBoostingBase
 
 class GradientBoostingRegressor(GradientBoostingBase):
     """Gradient Boosting Regressor"""

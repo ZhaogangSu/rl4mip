@@ -11,7 +11,7 @@ import numpy as np
 from numpy import ndarray
 from numpy.random import choice
 
-from ml4co.Trainer.LNS_model.GBDT_model.regression_tree import Node, RegressionTree
+from rl4mip.Trainer.LNS_model.GBDT_model.regression_tree import Node, RegressionTree
 
 class GradientBoostingBase:
     """GBDT base class.

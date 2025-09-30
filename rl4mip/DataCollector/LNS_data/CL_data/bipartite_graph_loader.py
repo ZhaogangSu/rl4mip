@@ -5,7 +5,7 @@
 # LICENSE file in the root directory of this source tree.
 # 
 
-from ml4co.DataCollector.LNS_data.CL_data import bipartite_graph_dataset as bgd
+from rl4mip.DataCollector.LNS_data.CL_data import bipartite_graph_dataset as bgd
 import torch_geometric
 import random
 import os

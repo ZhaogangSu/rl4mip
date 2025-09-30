@@ -4,7 +4,7 @@ import torch
 import torch_geometric
 from pathlib import Path
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
-from ml4co.Trainer.Nodeselect_model.ML.model import GNNPolicy, RankNet
+from rl4mip.Trainer.Nodeselect_model.ML.model import GNNPolicy, RankNet
 from DataLoader import GNNDataLoader, RankNetDataLoader, SVMDataLoader
 import numpy as np
 import sklearn as sk

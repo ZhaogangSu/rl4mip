@@ -8,9 +8,9 @@ from time import time as time
 import random
 import sys
 
-import ml4co.Trainer.Nodeselect_model.DSO.settings.consts as consts
-import ml4co.Trainer.Nodeselect_model.DSO.utils.logger as logger
-import ml4co.Trainer.Nodeselect_model.DSO.utils.utils as utils
+import rl4mip.Trainer.Nodeselect_model.DSO.settings.consts as consts
+import rl4mip.Trainer.Nodeselect_model.DSO.utils.logger as logger
+import rl4mip.Trainer.Nodeselect_model.DSO.utils.utils as utils
 
 import torch_geometric
 from torch_scatter import scatter_mean, scatter_max, scatter_sum
@@ -18,10 +18,10 @@ from torch.multiprocessing import Pool
 from torch_geometric.data import Data
 from torch import as_tensor
 
-from ml4co.Trainer.Nodeselect_model.DSO.utils.rl_algos import PPOAlgo
-import ml4co.Trainer.Nodeselect_model.DSO.dso_utils.expressions as expressions_module
-from ml4co.Trainer.Nodeselect_model.DSO.dso_utils.operators import Operators
-from ml4co.Trainer.Nodeselect_model.DSO.dso_utils.symbolic_agents import DSOAgent
+from rl4mip.Trainer.Nodeselect_model.DSO.utils.rl_algos import PPOAlgo
+import rl4mip.Trainer.Nodeselect_model.DSO.dso_utils.expressions as expressions_module
+from rl4mip.Trainer.Nodeselect_model.DSO.dso_utils.operators import Operators
+from rl4mip.Trainer.Nodeselect_model.DSO.dso_utils.symbolic_agents import DSOAgent
 
 import json
 # sys.path.append(os.path.abspath(os.path.dirname(__file__)))
