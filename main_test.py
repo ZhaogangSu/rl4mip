@@ -3,7 +3,7 @@ import torch
 import sys
 import argparse
 from torch.multiprocessing import set_start_method
-from ml4co.Test.MIPtest import MIPTest
+from rl4mip.Test.MIPtest import MIPTest
 
 
 def main():

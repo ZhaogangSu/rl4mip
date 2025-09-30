@@ -1,5 +1,5 @@
 [project]
-name = "ml4co"
+name = "rl4mip"
 version = "0.1.0"
 description = "Machine Learning for Combinatorial Optimization"
 authors = [
@@ -25,9 +25,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/ml4co"
-Repository = "https://github.com/yourusername/ml4co"
-Documentation = "https://ml4co.readthedocs.io"
+Homepage = "https://github.com/yourusername/rl4mip"
+Repository = "https://github.com/yourusername/rl4mip"
+Documentation = "https://rl4mip.readthedocs.io"
 
 [build-system]
 requires = ["setuptools>=61.0"]
@@ -35,4 +35,4 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["ml4co*"]
+include = ["rl4mip*"]

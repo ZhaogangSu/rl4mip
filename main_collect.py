@@ -2,7 +2,7 @@ from ast import arg
 import os
 from torch.multiprocessing import set_start_method
 import argparse
-from ml4co.DataCollector.MIPdata import MIPData
+from rl4mip.DataCollector.MIPdata import MIPData
 
 def main():
     DATA_DIR =  os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')

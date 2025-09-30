@@ -1,4 +1,4 @@
-from ml4co.DataGenerator.MIPDataGen import MIPDataGen
+from rl4mip.DataGenerator.MIPDataGen import MIPDataGen
 
 # 两种方法：'L2O', 'ACM'
 dataGenerator = MIPDataGen(method='L2O', num_workers=10)

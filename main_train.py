@@ -3,8 +3,8 @@ import sys
 import torch
 import datetime
 import argparse
-from ml4co.Trainer.MIPtrainer import MIPTrain
-from ml4co.DataCollector.MIPdata import MIPData
+from rl4mip.Trainer.MIPtrainer import MIPTrain
+from rl4mip.DataCollector.MIPdata import MIPData
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 def main():
