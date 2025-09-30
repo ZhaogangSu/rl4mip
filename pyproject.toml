@@ -1,0 +1,38 @@
+[project]
+name = "ml4co"
+version = "0.1.0"
+description = "Machine Learning for Combinatorial Optimization"
+authors = [
+    { name = "Yang Wu", email = "your.email@example.com" },
+    { name = "Zhaogang Su", email = "suzhaogang@lsec.cc.ac.cn" }
+    
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "pyscipopt>=4.3.0",
+    # add your core dependencies
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ml4co"
+Repository = "https://github.com/yourusername/ml4co"
+Documentation = "https://ml4co.readthedocs.io"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ml4co*"]
